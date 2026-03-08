@@ -23,6 +23,26 @@
 
 👉 [查看完整项目总结](PROJECT-SUMMARY.md) | [查看最新更新](CHANGELOG.md)
 
+## 🚨 2026.3.2 版本重要提示：升级后 AI 变"哑巴"？
+
+**OpenClaw 2026.3.2 踩雷警告**：该版本将工具权限和聊天能力做了隔离，默认 profile 改为 `messaging`（纯聊天模式），导致文件管理、命令执行等所有工具功能全部失效——AI 光聊天不干活。
+
+**快速修复**：
+
+- **有命令行环境**（本地/虚拟机/云服务器）：用 Codex 或 Claude Code 执行以下操作
+
+  ```bash
+  openclaw config get tools        # 查看当前 profile
+  openclaw config set tools.profile full  # 切换为 full
+  openclaw gateway restart         # 重启生效
+  ```
+
+- **无命令行环境**（手机版等）：访问 `http://127.0.0.1:18789` → 左侧「配置」→ 切换到 Raw 格式 → 找到 `tools.profile` 改为 `full` → 保存重启
+
+**5 种 profile 说明**：`messaging`（仅聊天）/ `default`（默认工具集）/ `coding`（编程）/ `full`（完整工具+命令执行，推荐）/ `all`（全开）
+
+---
+
 ## 🆘 遇到问题？快速解决
 
 <table>
@@ -327,6 +347,8 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - 🤖 **多机器人配置**：同时管理多个飞书机器人
 - 🎯 **多 Agent 配置**：不同机器人使用不同模型和工作空间
 - 🔧 **配置错误修复**：常见配置问题及解决方案
+- 🖥️ **ClawX**：开源AI研究助手，24/7自主运行 + 20+平台通知推送
+- 📊 **ClawPanel**：OpenClaw可视化管理面板，Gateway/多Agent/模型配置一站搞定
 
 #### [第10章：API服务集成（绘图/Notion/视频/语音）](docs/03-advanced/10-api-integration.md)
 > 接入第三方服务，让AI能力更强大

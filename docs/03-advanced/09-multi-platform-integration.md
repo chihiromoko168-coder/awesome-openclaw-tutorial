@@ -4236,6 +4236,77 @@ npm start
 
 ---
 
+## 9.13 更多 OpenClaw 可视化管理工具
+
+除了 OpenClaw Manager，社区还有以下两款优秀的可视化工具可选：
+
+---
+
+### 9.13.1 ClawX —— 开源 AI 研究助手
+
+> 项目地址：https://clawx.dev/ | GitHub：https://github.com/ValueCell-ai/ClawX
+
+**ClawX** 是由 ValueCell 团队开发的开源桌面应用，在本地运行，专注于 AI 自主任务执行和多平台通知推送。
+
+**核心功能**：
+
+| 功能 | 说明 |
+|------|------|
+| 24/7 自主运行 | 持续监控和执行任务，无需人工干预 |
+| 20+ 通讯平台通知 | 支持 WhatsApp、Telegram、Slack、Discord 等 |
+| 数据聚合 | 跨多个来源进行网页抓取和数据收集 |
+| 计划任务 | 基于 Cron 的定时监控功能 |
+| 多 AI 供应商 | 兼容 OpenAI、Anthropic、Google 等 10+ 个提供商 |
+
+**技术特点**：
+- TypeScript + React 开发，支持 macOS / Windows / Linux
+- 本地优先存储，数据不上云
+- 兼容 OpenClaw 生态 55+ 扩展技能
+- MIT 开源，完全免费，只需支付 AI 提供商 API 费用
+
+**获取方式**：访问 [GitHub Releases](https://github.com/ValueCell-ai/ClawX/releases) 下载对应平台安装包。
+
+---
+
+### 9.13.2 ClawPanel —— OpenClaw 可视化管理面板
+
+> 项目地址：https://claw.qt.cool/ | GitHub：https://github.com/qingchencloud/clawpanel
+
+**ClawPanel** 是基于 Tauri v2 构建的跨平台桌面管理面板（当前版本 v0.7.0），专为 OpenClaw Gateway 和多 Agent 日常管理而设计。
+
+**核心功能**：
+
+| 功能 | 说明 |
+|------|------|
+| Dashboard 监控 | 实时查看 Gateway 状态、服务状态、Agent 数量、模型池 |
+| AI 对话界面 | 多模型流式对话，WebSocket 连接 Gateway |
+| 模型配置 | 统一管理 OpenAI、DeepSeek、Kimi 等多个 AI 服务商 |
+| 记忆管理 | 可视化编辑 Agent 工作记忆、归档、核心配置文件 |
+| 多 Agent 管理 | 创建和管理多个 Agent，工作空间隔离 |
+| 工具权限控制 | 细粒度工具权限管理，Token/密码认证 |
+| 内置 AI 助手 | 一键安装 OpenClaw、配置诊断、自动化故障排查 |
+
+**平台支持**：
+- macOS（Apple Silicon + Intel）
+- Windows（.exe / .msi）
+- Linux（AppImage / .deb）
+
+**获取方式**：访问 [GitHub Releases](https://github.com/qingchencloud/clawpanel/releases/latest) 下载，MIT 开源免费。
+
+---
+
+### 9.13.3 三款工具对比
+
+| 工具 | 定位 | 适合场景 |
+|------|------|---------|
+| OpenClaw Manager | Web 管理界面，多 Gateway 管理 | 多飞书机器人、多 Gateway 场景 |
+| ClawX | 桌面应用，自主任务 + 多平台通知 | 定时任务、数据监控、推送通知 |
+| ClawPanel | 桌面管理面板，全功能可视化 | 日常管理 Gateway、多 Agent、模型配置 |
+
+三款工具均免费开源，可以根据自己的使用场景选择或组合使用。
+
+---
+
 ## 📝 本章小结
 
 通过本章学习，你已经掌握：
@@ -4249,6 +4320,7 @@ npm start
 7. **多Agent配置**：高级的多Agent管理和配置
 8. **本地多Agent**：无需绑定IM平台的本地使用
 9. **OpenClaw Manager**：可视化管理工具的使用
+10. **ClawX / ClawPanel**：更多开源可视化管理工具选择
 
 ## 🎯 实战练习
 
@@ -4257,12 +4329,13 @@ npm start
 3. 使用 OpenClaw Manager创建和管理多个Gateway
 4. 为每个Agent定制专属的人格设定
 5. 配置launchd保活服务，实现开机自启
+6. 试用 ClawPanel 或 ClawX，找到最适合自己的管理方式
 
 ## 💡 进阶建议
 
 1. 探索更多IM平台的集成方式
 2. 优化Agent的人格设定，提升使用体验
-3. 使用 OpenClaw Manager简化日常管理
+3. 使用 OpenClaw Manager / ClawPanel 简化日常管理
 4. 为团队成员创建专属的AI助手
 5. 定期备份配置，避免数据丢失
 
