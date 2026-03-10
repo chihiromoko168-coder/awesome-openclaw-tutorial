@@ -167,7 +167,9 @@ openclaw gateway restart
 | 内容 | 数量 |
 |------|------|
 | 正文章节 | 15 章，约 267,000 字 |
-| 附录 | 9 个，约 86,000 字 |
+| 基础附录 | 6 个（A-F），约 86,000 字 |
+| 高级附录 | 8 个（G-N），约 65,000 字 |
+| 安全指南 | 1 个，约 15,000 字 |
 | 实战案例 | 70+ 个，可直接复用 |
 | 配置截图 | 50+ 张，手把手教学 |
 | 命令参考 | 100+ 条，完整速查表 |
@@ -213,7 +215,8 @@ openclaw gateway restart
 
 ### 附录：速查手册
 
-| 附录 | 内容 |
+#### 基础附录（A-F）
+| ��录 | 内容 |
 |------|------|
 | [附录A：命令速查表](appendix/A-command-reference.md) | 100+ 常用命令，5 大类快速查找 |
 | [附录B：必装 Skills 清单](appendix/B-skills-catalog.md) | Top10 必装技能，附安装教程 |
@@ -221,9 +224,23 @@ openclaw gateway restart
 | [附录D：社区资源导航](appendix/D-community-resources.md) | 官方文档、视频教程、交流群 |
 | [附录E：常见问题速查](appendix/E-common-problems.md) | 安装/API/Skills/性能问题解决 |
 | [附录F：避坑指南与最佳实践](appendix/F-best-practices.md) | 新手必看，前人经验总结 |
+
+#### 高级附录（G-N）
+| 附录 | 内容 |
+|------|------|
 | [附录G：文档链接验证](appendix/G-links-validation.md) | 所有链接状态检查 |
 | [附录H：配置文件模板](appendix/H-config-templates.md) | 开箱即用的配置示例 |
 | [附录I：思考题参考答案](appendix/I-thinking-questions-answers.md) | 各章节思考题详解 |
+| [附录J：飞书配置检查清单](appendix/J-feishu-checklist.md) | 确保飞书Bot配置完整，避免常见问题 |
+| [附录K：API Key 配置完整指南](appendix/K-api-key-config-guide.md) | 多种API Key配置方式详解 |
+| [附录L：配置文件结构完整指南](appendix/L-config-file-structure.md) | 全局配置、Agent配置、认证配置详解 |
+| [附录M：搜索功能使用指南](appendix/M-search-guide.md) | 搜索���能使用技巧和常见问题 |
+| [附录N：Skills 生态说明](appendix/N-skills-ecosystem.md) | 内置49个、官方93个、社区1715+个Skills介绍 |
+
+#### 安全指南
+| 附录 | 内容 |
+|------|------|
+| [安全指南](docs/03-advanced/99-security-guide.md) | 安全模型、已知安全事件、Skills安全与最佳实践 |
 
 ---
 
@@ -265,6 +282,8 @@ openclaw gateway restart
   <p>🚀 一个人 + OpenClaw = 无限可能 🚀</p>
 </div>
 
-**最后更新**：2026年3月
-**教程版本**：v1.4
-**适用 OpenClaw 版本**：2026.3.2
+**最后更新**：2026年3月10日
+**教程版本**：v1.5
+**总字数**：418,000字（正文267,000字 + 附录151,000字）
+**章节数**：15章正文 + 14个附录 + 1个安全指南
+**适用 OpenClaw 版本**：2026.3.7（推荐稳定版）

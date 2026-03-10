@@ -13,13 +13,13 @@
 
 **教程已完成，正在持续优化中！** 🎊
 
-- ✅ **17章正文**：约267,000字（新增多 Agent 配置）
-- ✅ **4个附录**：约25,000字
-- ✅ **总字数**：约292,000字
+- ✅ **15章正文**：约267,000字（新增多 Agent 配置）
+- ✅ **14个附录 + 1个安全指南**：约151,000字
+- ✅ **总字数**：约418,000字
 - ✅ **70+实战案例**：可直接应用
 - ✅ **完整配图**：50+张配置截图
 - 🔄 **持续优化**：删除重复内容，提升质量
-- 🆕 **新增内容**：多 Agent 配置（第9章）、超级个体实战案例（第15章）、AI绘图实战（第14章）
+- 🆕 **新增内容**：多 Agent 配置（第9章）、超级个体实战案例（第15章）、AI绘图实战（第14章）、完整附录体系（附录A-N）
 
 👉 [查看完整项目总结](PROJECT-SUMMARY.md) | [查看最新更新](CHANGELOG.md)
 
@@ -441,11 +441,6 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - 🚨 已知安全事件：CVE-2026-25253、ClawHavoc攻击、Anthropic封杀、谷歌封号
 - 🛡️ Skills安全：供应链攻击防护、安全审查最佳实践
 - ✅ 安全最佳实践：API密钥安全、数据隐私、网络安全、审计日志
-> 榨干OpenClaw性能，省钱又高效
-- 🎛️ Antigravity Manager：可视化配置管理
-- 🔄 多模型切换：不同任务用不同模型，省50%成本
-- 💰 成本优化：国产模型组合，月费用降至5-30元
-- ⚡ 性能调优：响应速度提升3倍
 
 ---
 
@@ -489,16 +484,26 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ### 📖 附录：速查手册
 
+#### 基础附录
 - [附录A：命令速查表](appendix/A-command-reference.md) - 100+常用命令，5大类快速查找
 - [附录B：必装Skills清单](appendix/B-skills-catalog.md) - Top 10必装技能，附安装教程
 - [附录C：API服务商对比](appendix/C-api-comparison.md) - 10+服务商价格对比，帮你省钱
 - [附录D：社区资源导航](appendix/D-community-resources.md) - 官方文档、视频教程、交流群
 - [附录E：常见问题速查](appendix/E-common-problems.md) - 安装/API/Skills/性能问题解决
 - [附录F：避坑指南与最佳实践](appendix/F-best-practices.md) - 新手必看，前人经验总结
-- [安全指南](docs/03-advanced/99-security-guide.md) - 安全模型、已知事件、Skills安全与最佳实践
+
+#### 高级附录
 - [附录G：文档链接验证](appendix/G-links-validation.md) - 所有链接状态检查
 - [附录H：配置文件模板](appendix/H-config-templates.md) - 开箱即用的配置示例
 - [附录I：思考题参考答案](appendix/I-thinking-questions-answers.md) - 各章节思考题详解
+- [附录J：飞书配置检查清单](appendix/J-feishu-checklist.md) - 确保飞书Bot配置完整
+- [附录K：API Key配置完整指南](appendix/K-api-key-config-guide.md) - 多种API Key配置方式详解
+- [附录L：配置文件结构完整指南](appendix/L-config-file-structure.md) - 全局配置、Agent配置、认证配置详解
+- [附录M：搜索功能使用指南](appendix/M-search-guide.md) - 搜索功能使用技巧和常见问题
+- [附录N：Skills生态说明](appendix/N-skills-ecosystem.md) - 内置49个、官方93个、社区1715+个Skills介绍
+
+#### 安全指南
+- [安全指南：安全模型与已知事件](docs/03-advanced/99-security-guide.md) - 安全模型、已知安全事件、Skills安全与最佳实践
 
 ## 📊 项目数据
 
@@ -507,11 +512,13 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 | 类别 | 数量 | 说明 |
 |------|------|------|
 | 正文章节 | 15章 | 约267,000字 |
-| 附录 | 8个 | 约86,000字（新增4个） |
+| 基础附录 | 6个 | 约86,000字 |
+| 高级附录 | 8个 | 约50,000字 |
+| 安全指南 | 1个 | 约15,000字 |
 | 配置示例 | 4个 | 开箱即用 |
 | 自动化脚本 | 4个 | 实用工具 |
 | Skills示例 | 2个 | 完整代码 |
-| 总字数 | 353,000字 | 新增61,000字 |
+| 总字数 | 418,000字 | 完整教程体系 |
 | 实战案例 | 70+ | 可直接应用 |
 | 配置截图 | 50+ | 手把手图文教学 |
 | 命令参考 | 100+ | 完整命令速查表 |
@@ -795,12 +802,12 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ---
 
-**最后更新**：2026年2月14日  
-**教程版本**：v1.4（持续更新）  
-**书名**：一本书玩转OpenClaw：超级个体实战指南  
-**副标题**：从零开始打造你的AI工作助手  
-**总字数**：353,000字（新增附录 61,000字 + 示例 16个文件）  
-**章节数**：15章 + 8附录  
+**最后更新**：2026年3月10日
+**教程版本**：v1.5（持续更新）
+**书名**：一本书玩转OpenClaw：超级个体实战指南
+**副标题**：从零开始打造你的AI工作助手
+**总字数**：418,000字（正文267,000字 + 附录151,000字）
+**章节数**：15章正文 + 14个附录 + 1个安全指南
 **适用OpenClaw版本**：2026.3.7（推荐稳定版）
 
 **本次更新亮点**：
