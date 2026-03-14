@@ -13,6 +13,11 @@ title: 首页
 [![Version](https://img.shields.io/badge/version-v2026.3.12-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-2026.3.12-orange.svg)](https://openclaw.ai)
 
+[![CSDN](https://img.shields.io/badge/CSDN-博客-c32136?style=for-the-badge&logo=csdn)](https://blog.csdn.net/xianyu120)
+[![Bilibili](https://img.shields.io/badge/Bilibili-B站-fb7299?style=for-the-badge&logo=bilibili)](https://space.bilibili.com/399102586)
+[![微信公众号](https://img.shields.io/badge/微信公众号-MaynorAI-07C160?style=for-the-badge&logo=wechat)](https://upload.may.maynor1024.live/file/1773461955906_qrcode_for_gh_c749803541de_1280.jpg)
+[![YouTube](https://img.shields.io/badge/YouTube-Profile-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@buguniao537)
+[![X](https://img.shields.io/badge/X-Profile-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Nikitka_aktikiN)
 ---
 
 ## 🎯 新手快速通道
@@ -34,6 +39,42 @@ title: 首页
 ---
 
 ## 🚨 版本升级重要提示
+
+### 🎉 2026.3.12 版本：重大功能更新
+
+**OpenClaw 2026.3.12 已发布！**（2026年3月13日）
+
+#### 🎛️ Control UI 全面升级（Dashboard v2）
+- **模块化视图设计**：全新的概览、聊天、配置、Agent 和会话视图
+- **命令面板**：快速访问所有功能的命令面板（Command Palette）
+- **移动端优化**：新增底部标签栏，移动端体验大幅提升
+- **增强聊天工具**：斜杠命令、搜索、导出、置顶消息功能
+
+#### ⚡ 快速模式（Fast Mode）支持
+- **OpenAI GPT-5.4**：会话级快速切换，支持 `/fast`、TUI、Control UI 和 ACP
+- **Anthropic Claude**：`/fast` 切换映射到 API-key 的 `service_tier` 请求
+- **本地模型加速**：Ollama、vLLM、SGLang 迁移至提供商插件架构
+
+#### 🔌 Kubernetes 支持
+- **初始 K8s 安装路径**：包含原始清单和 Kind 设置
+- **企业级部署**：完整的 Kubernetes 部署文档
+
+#### 🔒 ��全增强（重要！）
+- **设备配对安全**：`/pair` 和 `openclaw qr` 使用短期引导令牌
+- **插件信任机制**：禁用隐式工作区插件自动加载，需要明确信任决定
+- **命令权限控制**：`/config` 和 `/debug` 要求发送者所有权
+- **网关认证强化**：清除共享令牌 WebSocket 连接的未绑定客户端声明
+
+**升级命令**：
+```bash
+openclaw update && openclaw gateway restart
+```
+
+👉 [查看完整发布说明](https://github.com/openclaw/openclaw/releases)
+
+---
+
+### ⚠️ 2026.3.7 版本：Gateway认证要求（Breaking Change）
 
 ### ⚠️ 2026.3.7 版本：Gateway认证要求（Breaking Change）
 
@@ -270,42 +311,12 @@ openclaw gateway restart
 
 ## 📮 联系方式
 
-<div align="center">
-    <p>
-        <!-- CSDN Badge -->
-        <a href="https://blog.csdn.net/xianyu120">
-            <img src="https://img.shields.io/badge/CSDN-博客-c32136?style=for-the-badge&logo=csdn" alt="CSDN" />
-        </a>
-        <!-- Bilibili Badge -->
-        <a href="https://space.bilibili.com/399102586">
-            <img src="https://img.shields.io/badge/Bilibili-B站-fb7299?style=for-the-badge&logo=bilibili" alt="Bilibili" />
-        </a>
-        <!-- WeChat Official Account Badge -->
-        <a href="https://upload.maynor1024.live/file/1773461955906_qrcode_for_gh_c749803541de_1280.jpg" target="_blank">
-            <img src="https://img.shields.io/badge/微信公众号-关注我-07C160?style=for-the-badge&logo=wechat" alt="微信公众号" />
-        </a>
-        <!-- YouTube Badge -->
-        <a href="https://www.youtube.com/@buguniao537">
-            <img src="https://img.shields.io/badge/YouTube-Profile-red?style=for-the-badge&logo=youtube" alt="Youtube" />
-        </a>
-        <!-- QQ Badge -->
-        <a href="https://qm.qq.com/q/Q4YTVK5T6q">
-            <img src="https://img.shields.io/badge/QQ-1002569303-0099ff?style=for-the-badge&logo=tencentqq" alt="QQ" />
-        </a>
-        <!-- X (Twitter) Badge -->
-        <a href="https://x.com/Nikitka_aktikiN">
-            <img src="https://img.shields.io/badge/X-Profile-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-        </a>
-    </p>
-</div>
-
 ### 社交媒体
 - **GitHub**: [@xianyu110](https://github.com/xianyu110)
 - **CSDN专栏**: [OpenClaw从入门到精通](https://blog.csdn.net/xianyu120/category_13126767.html)
 - **B站**: [@MaynorAI](https://space.bilibili.com/399102586)
 - **YouTube**: [@buguniao537](https://www.youtube.com/@buguniao537)
 - **X (Twitter)**: [@Nikitka_aktikiN](https://x.com/Nikitka_aktikiN)
-- **QQ群**: [1002569303](https://qm.qq.com/q/Q4YTVK5T6q)
 - **微信公众号**: [扫码关注](https://upload.maynor1024.live/file/1773461955906_qrcode_for_gh_c749803541de_1280.jpg)
 
 ### 项目链接

@@ -9,6 +9,12 @@
 [![Version](https://img.shields.io/badge/version-v2026.3.12-green.svg)](https://github.com/xianyu110/awesome-openclaw-tutorial)
 [![Status](https://img.shields.io/badge/status-完成-success.svg)](PROJECT-SUMMARY.md)
 
+[![CSDN](https://img.shields.io/badge/CSDN-博客-c32136?style=for-the-badge&logo=csdn)](https://blog.csdn.net/xianyu120)
+[![Bilibili](https://img.shields.io/badge/Bilibili-B站-fb7299?style=for-the-badge&logo=bilibili)](https://space.bilibili.com/399102586)
+[![微信公众号](https://img.shields.io/badge/微信公众号-MaynorAI-07C160?style=for-the-badge&logo=wechat)](https://upload.may.maynor1024.live/file/1773461955906_qrcode_for_gh_c749803541de_1280.jpg)
+[![YouTube](https://img.shields.io/badge/YouTube-Profile-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/@buguniao537)
+[![X](https://img.shields.io/badge/X-Profile-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/Nikitka_aktikiN)
+
 ## 🎉 项目状态
 
 **教程已完成，正在持续优化中！** 🎊
@@ -29,13 +35,35 @@
 
 ### 🚀 版本更新至 v2026.3.12
 
-**OpenClaw 最新版本 v2026.3.12 已发布！**
+**OpenClaw 最新版本 v2026.3.12 已发布！**（2026年3月13日）
 
-- 🎛️ **Dashboard v2** - 全新的控制面板UI，更美观易用
-- ⚡ **Fast mode 支持** - ollama/sglang/vllm 等本地模型加速模式
-- 🔌 **增强插件支持** - "core goes on a diet"，更轻量的核心
-- 📊 **实时终端仪表板** - 监控 CPU、内存、GPU、会话和 Agent 状态
-- 🚀 **性能优化** - 响应速度和资源占用进一步优化
+#### 🎛️ Control UI 全面升级（Dashboard v2）
+- **模块化视图设计**：全新的概览、聊天、配置、Agent 和会话视图
+- **命令面板**：快速访问所有功能的命令面板（Command Palette）
+- **移动端优化**：新增底部标签栏，移动端体验大幅提升
+- **增强聊天工具**：斜杠命令、搜索、导出、置顶消息功能
+
+#### ⚡ 快速模式（Fast Mode）支持
+- **OpenAI GPT-5.4**：会话级快速切换，支持 `/fast`、TUI、Control UI 和 ACP
+- **Anthropic Claude**：`/fast` 切换映射到 API-key 的 `service_tier` 请求
+- **本地模型加速**：Ollama、vLLM、SGLang 迁移至提供商插件架构
+
+#### 🔌 Kubernetes 支持
+- **初始 K8s 安装路径**：包含原始清单和 Kind 设置
+- **企业级部署**：完整的 Kubernetes 部署文档
+
+#### 🔒 安全增强（重要！）
+- **设备配对安全**：`/pair` 和 `openclaw qr` 使用短期引导令牌
+- **插件信任机制**：禁用隐式工作区插件自动加载，需要明确信任决定
+- **命令权限控制**：`/config` 和 `/debug` 要求发送者所有权
+- **网关认证强化**：清除共享令牌 WebSocket 连接的未绑定客户端声明
+
+#### 🐛 重要修复
+- **Kimi Coding**：恢复以原生 Anthropic 格式发送工具
+- **TUI**：修复重复的助手回复渲染问题
+- **macOS**：添加缺失的 `NSRemindersUsageDescription`
+- **Windows**：原生更新使用 npm 更新路径
+- **Mattermost**：修复块流激活时的重复消息传递
 
 **升级示例**（从 v2026.3.2 升级到 v2026.3.12）：
 
@@ -783,42 +811,12 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 ## 📮 联系方式
 
-<div align="center">
-    <p>
-        <!-- CSDN Badge -->
-        <a href="https://blog.csdn.net/xianyu120">
-            <img src="https://img.shields.io/badge/CSDN-博客-c32136?style=for-the-badge&logo=csdn" alt="CSDN" />
-        </a>
-        <!-- Bilibili Badge -->
-        <a href="https://space.bilibili.com/399102586">
-            <img src="https://img.shields.io/badge/Bilibili-B站-fb7299?style=for-the-badge&logo=bilibili" alt="Bilibili" />
-        </a>
-        <!-- WeChat Official Account Badge -->
-        <a href="https://restname.oss-cn-hangzhou.aliyuncs.com/qrcode_for_gh_c749803541de_1280.jpg" target="_blank">
-            <img src="https://img.shields.io/badge/微信公众号-关注我-07C160?style=for-the-badge&logo=wechat" alt="微信公众号" />
-        </a>
-        <!-- YouTube Badge -->
-        <a href="https://www.youtube.com/@buguniao537">
-            <img src="https://img.shields.io/badge/YouTube-Profile-red?style=for-the-badge&logo=youtube" alt="Youtube" />
-        </a>
-        <!-- QQ Badge -->
-        <a href="https://qm.qq.com/q/Q4YTVK5T6q">
-            <img src="https://img.shields.io/badge/QQ-1002569303-0099ff?style=for-the-badge&logo=tencentqq" alt="QQ" />
-        </a>
-        <!-- X (Twitter) Badge -->
-        <a href="https://x.com/Nikitka_aktikiN">
-            <img src="https://img.shields.io/badge/X-Profile-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" />
-        </a>
-    </p>
-</div>
-
 ### 社交媒体
 - **GitHub**: [@xianyu110](https://github.com/xianyu110)
 - **CSDN专栏**: [OpenClaw从入门到精通](https://blog.csdn.net/xianyu120/category_13126767.html)
 - **B站**: [@MaynorAI](https://space.bilibili.com/399102586)
 - **YouTube**: [@buguniao537](https://www.youtube.com/@buguniao537)
 - **X (Twitter)**: [@Nikitka_aktikiN](https://x.com/Nikitka_aktikiN)
-- **QQ群**: [1002569303](https://qm.qq.com/q/Q4YTVK5T6q)
 - **微信公众号**: [扫码关注](https://upload.maynor1024.live/file/1773461955906_qrcode_for_gh_c749803541de_1280.jpg)
 
 ### 项目链接
@@ -861,11 +859,12 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 **当前最新版本**：openclaw 2026.3.12（2026.3.12）
 
 **2026.3.12 重点更新（建议关注）**：
-- 🎛️ **Dashboard v2** - 全新的控制面板UI，更美观易用
-- ⚡ **Fast mode 支持** - ollama/sglang/vllm 等本地模型加速模式
-- 🔌 **增强插件支持** - "core goes on a diet"，更轻量的核心
-- 📊 **实时终端仪表板** - 监控 CPU、内存、GPU、会话和 Agent 状态
-- 🚀 **性能优化** - 响应速度和资源占用进一步优化
+- 🎛️ **Control UI 全面升级** - 模块化视图设计、命令面板、移动端底部标签栏
+- ⚡ **Fast Mode 支持** - OpenAI GPT-5.4、Anthropic Claude、本地模型加速
+- 🔌 **提供商插件架构** - Ollama/vLLM/SGLang 迁移至插件架构
+- ☸️ **Kubernetes 支持** - 企业级 K8s 部署方案
+- 🔒 **安全增强** - 设备配对安全、插件信任机制、命令权限控制
+- 🐛 **重要修复** - Kimi Coding、TUI、macOS、Windows、Mattermost 修复
 
 **历史版本重要更新**：
 - ✅ **v2026.3.8**：新增备份命令、ACP 增强、Brave 搜索模式
