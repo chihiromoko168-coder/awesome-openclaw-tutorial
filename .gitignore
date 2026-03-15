@@ -27,3 +27,18 @@ openclaw-manager/node_modules/
 # docx临时文件
 docx/.~*.docx
 docx/样章模板*.docx
+
+# 导出文件和临时文件
+docx_export/
+docx_export*.zip
+*.zip
+
+# CSDN发布指南（个人工具）
+CSDN*.md
+APPENDIX_PUBLISH_CHECKLIST.md
+
+# updates目录（临时更新文件）
+updates/
+
+# 技能验证报告
+Skills*.md
