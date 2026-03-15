@@ -172,7 +172,8 @@ openclaw gateway restart
 |------|------|
 | 正文章节 | 15 章，约 267,000 字 |
 | 基础附录 | 6 个（A-F），约 86,000 字 |
-| 高级附录 | 9 个（G-O），约 65,000 字 |
+| 高级附录 | 10 个（G-O），约 67,000 字 |
+| 视频教程附录 | 1 个（F），约 2,600 字 |
 | 安全指南 | 1 个，约 15,000 字 |
 | 实战案例 | 70+ 个，可直接复用 |
 | 配置截图 | 50+ 张，手把手教学 |
@@ -229,6 +230,9 @@ openclaw gateway restart
 | [附录D：社区资源导航](appendix/D-community-resources.md) | 官方文档、视频教程、交流群 |
 | [附录E：常见问题速查](appendix/E-common-problems.md) | 安装/API/Skills/性能问题解决 |
 | [附录F：避坑指南与最佳实践](appendix/F-best-practices.md) | 新手必看，前人经验总结 |
+
+#### 视频教程附录（F）
+| [附录F：配套实操视频指南](appendix/F-video-tutorials.md) | 7个视频教程链接，包含部署、接入和高级配置 |
 
 #### 高级附录（G-O）
 

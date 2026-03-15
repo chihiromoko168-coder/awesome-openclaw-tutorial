@@ -24,7 +24,7 @@
 - ✅ **70+实战案例**：可直接应用
 - ✅ **完整配图**：50+张配置截图
 - 🔄 **持续优化**：删除重复内容，提升质量
-- 🆕 **新增内容**：多 Agent 配置（第9章）、超级个体实战案例（第15章）、AI绘图实战（第14章）、完整附录体系（附录A-O）
+- 🆕 **新增内容**：多 Agent 配置（第9章）、超级个体实战案例（第15章）、AI绘图实战（第14章）、完整附录体系（附录A-O + F视频教程）
 
 👉 [查看完整项目总结](PROJECT-SUMMARY.md) | [查看最新更新](CHANGELOG.md)
 
@@ -124,7 +124,7 @@ openclaw gateway restart
 
 | 项目 | 更新前 | 更新后 |
 |------|--------|--------|
-| **附录数量** | 14个（A-N） | 15个（A-O）✨ |
+| **附录数量** | 15个（A-O） | 16个（A-O+F视频教程）✨ |
 | **总字数** | 41.8万字 | 42.3万字 |
 | **章节数** | 15章+14附录+1安全指南 | 15章+15附录+1安全指南 |
 | **适用版本** | v2026.3.7 | v2026.3.12 |
@@ -599,8 +599,21 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 - [附录B：必装Skills清单](appendix/B-skills-catalog.md) - Top 10必装技能，附安装教程
 - [附录C：API服务商对比](appendix/C-api-comparison.md) - 10+服务商价格对比，帮你省钱
 - [附录D：社区资源导航](appendix/D-community-resources.md) - 官方文档、视频教程、交流群
-- [附录E：常见问题速查](appendix/E-common-problems.md) - 安装/API/Skills/性能问题解决
-- [附录F：避坑指南与最佳实践](appendix/F-best-practices.md) - 新手必看，前人经验总结
+- [附录A：命令速查表](appendix/A-command-reference.md) - 常用命令快速查询
+- [附录B：常用Skills清单](appendix/B-skills-catalog.md) - 15个进阶Skills详解
+- [附录C：API对比指南](appendix/C-api-comparison.md) - 各种API优劣势分析
+- [附录D：社区资源导航](appendix/D-community-resources.md) - 官方资源汇总
+- [附录E：配置模板与自定义参考](appendix/E-config-templates.md) - 开箱即用的配置模板
+- [附录F：配套实操视频指南](appendix/F-video-tutorials.md) - 7个视频教程链接
+- [附录G：链接验证清单](appendix/G-links-validation.md) - 有效性验证
+- [附录H：飞书配置检查清单](appendix/H-feishu-checklist.md) - 飞书配置步骤
+- [附录I：思考题与答案](appendix/I-thinking-questions-answers.md) - 学习自测
+- [附录J：腾讯云���度解析](appendix/J-tencent-deep-dive.md) - 腾讯云版本详解
+- [附录K：API密钥配置指南](appendix/K-api-key-config-guide.md) - API配置详解
+- [附录L：配置文件结构](appendix/L-config-file-structure.md) - 配置文件说明
+- [附录M：搜索指南](appendix/M-search-guide.md) - 搜索技巧
+- [附录N：Skills生态](appendix/N-skills-ecosystem.md) - Skills生态详解
+- [附录O：国产Claw产品选购指南](appendix/O-domestic-claw-products.md) - 产品对比分析
 
 #### 高级附录
 - [附录G：文档链接验证](appendix/G-links-validation.md) - 所有链接状态检查
@@ -637,8 +650,21 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 
 | 类型 | 新增内容 | 字数/数量 | 亮点 |
 |------|---------|----------|------|
-| 附录E | 常见问题速查 | 15,000字 | 22个问题完整解决方案 |
-| 附录F | 避坑指南与最佳实践 | 18,000字 | 10大错误+8类最佳实践 |
+| 附录A | 命令速查表 | 完整更新 | 常用命令快速查询 |
+| 附录B | 常用Skills清单 | 22,000字 | 15个进阶Skills详解 |
+| 附录C | API对比指南 | 完整更新 | 各种API优劣势分析 |
+| 附录D | 社区资源导航 | 5,000字 | 官方资源汇总 |
+| 附录E | 配置模板与自定义参考 | 15,000字 | 开箱即用的配置模板 |
+| 附录F | 配套实操视频指南 | 2,600字 | 7个视频教程链接 |
+| 附录G | 链接验证清单 | 完整更新 | 有效性验证 |
+| 附录H | 飞书配置检查清单 | 完整更新 | 飞书配置步骤 |
+| 附录I | 思考题与答案 | 完整更新 | 学习自测 |
+| 附录J | 腾讯云深度解析 | 完整更新 | 腾讯云版本详解 |
+| 附录K | API密钥配置指南 | 完整更新 | API配置详解 |
+| 附录L | 配置文件结构 | 完整更新 | 配置文件说明 |
+| 附录M | 搜索指南 | 完整更新 | 搜索技巧 |
+| 附录N | Skills生态 | 完整更新 | Skills生态详解 |
+| 附录O | 国产Claw产品选购指南 | 450行 | 产品对比分析 |
 | 附录G | 文档链接验证 | 8,000字 | 245+链接验证清单 |
 | 附录H | 配置文件模板 | 20,000字 | 20+配置模板 |
 | 示例 | 配置+脚本+Skills | 16个文件 | 开箱即用 |
@@ -935,7 +961,8 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 **适用OpenClaw版本**：2026.3.12（推荐最新版）
 
 **本次更新亮点**：
-- ✅ 新增附录O：国产Claw产品选购指南（450行）
+- ✅ 新增附录F：配套实操视频指南（7个视频教程链接）
+- ✅ 更新所有附录内容（附录A-O完整更新）
 - ✅ Skills生态大爆发：从1800+到492,000+
 - ✅ 安全指南升级：ACP、备份工具、ClawJacked漏洞等
 - ✅ 更新统计数据和版本信息（v2026.3.12）
