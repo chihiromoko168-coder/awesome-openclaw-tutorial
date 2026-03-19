@@ -390,6 +390,25 @@ openclaw status
 
 #### 第七步：配置Windows访问WSL2服务
 
+
+在同一个PowerShell窗口中，运行以下命令列出所有已安装的发行版：
+```bash
+wsl --list --verbose
+```
+
+启动正确的 WSL 发行版并切换到普通用户：
+您需要进入安装 OpenClaw 的那个 Ubuntu 系统，并切换到安装时所用的用户（非 root用户）。根据您的输出，您有两个 Ubuntu 发行版：Ubuntu和 Ubuntu-24.04。您提到龙虾安装在 ubuntu-24.04里，所以应该启动这个。
+在 Windows PowerShell 中执行：
+```bash
+wsl -d Ubuntu-24.04
+```
+
+以下命令来更改默认的WSL发行版：
+```bash
+wsl --set-default Ubuntu-24.04
+```
+
+
 由于OpenClaw运行在WSL2中，需要配置端口转发布以便Windows访问。
 
 **创建启动脚本** `start-openclaw.bat`：
