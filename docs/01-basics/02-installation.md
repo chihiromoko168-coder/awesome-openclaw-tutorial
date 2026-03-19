@@ -408,6 +408,11 @@ wsl -d Ubuntu-24.04
 wsl --set-default Ubuntu-24.04
 ```
 
+注意注意我的启动只能在ubuntu中去启动网关，下面的指令不行
+```bash
+openclaw gateway
+```
+
 
 由于OpenClaw运行在WSL2中，需要配置端口转发布以便Windows访问。
 
