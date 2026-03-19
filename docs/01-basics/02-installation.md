@@ -369,6 +369,12 @@ npm -v
 curl -fsSL https://openclaw.ai/install.sh | bash
 ```
 
+加入环境变量
+```bash
+echo 'export PATH="/home/mkson/.npm-global/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+```
+
 #### 第六步：验证安装
 
 ```bash
